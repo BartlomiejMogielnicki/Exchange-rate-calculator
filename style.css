@@ -1,1 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #00BFA5;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 65%;
+}
+
+.title {
+    margin: 30px;
+    color: var(--main-color)
+}
+
+.container {
+    width: 60%;
+    margin-top: 15px;
+}
+
+.currency,
+.swap-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+}
+
+select,
+button {
+    padding: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    margin-left: 8px;
+    color: white;
+    background-color: var(--main-color)
+}
+
+.currency input {
+    border: none;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.currency input:focus,
+.btn:focus,
+select:focus {
+    outline: 0;
+}
