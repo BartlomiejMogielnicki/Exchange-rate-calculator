@@ -16,13 +16,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: 'Roboto', sans-serif;
     max-width: 800px;
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .logo {
     width: 65%;
+    min-width: 450px;
 }
 
 .title {
@@ -30,16 +31,28 @@
     color: var(--main-color)
 }
 
+.text {
+    font-size: 1em;
+}
+
 .container {
     width: 60%;
+    min-width: 350px;
     margin-top: 15px;
+    margin: 0 auto;
 }
 
 .currency,
 .swap-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 30px 20px;
+}
+
+.rate-info {
+    color: var(--main-color);
+    font-weight: bold;
 }
 
 select,
@@ -47,8 +60,8 @@ button {
     padding: 5px;
     border: 1px solid #bbb;
     border-radius: 5px;
-    font-size: 1em;
     font-family: 'Roboto', sans-serif;
+    font-size: 1em;
     background-color: transparent;
     cursor: pointer;
 }
@@ -61,6 +74,7 @@ button {
 
 .currency input {
     border: none;
+    min-width: 0;
     font-size: 1.5em;
     text-align: right;
 }
